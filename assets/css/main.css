@@ -4241,3 +4241,49 @@ input, select, textarea {
 #two .spotlight:last-of-type {
     margin-bottom: 0.5em; /* Further reduced margin */
 }
+
+/* Fix spacing and alignment for the Community Involvement section */
+@media only screen and (max-width: 768px) {
+    #two .spotlight {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #two .spotlight .content {
+        margin-top: 1em;
+    }
+    #two .spotlight .image {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .icons.labeled li {
+        display: inline-block;
+        margin: 1em;
+    }
+
+    .icons.labeled li span.label {
+        display: block;
+        margin-top: 0.5em;
+    }
+
+    .icons.labeled {
+        text-align: center;
+    }
+}
+
+/* Fix the header image and text alignment */
+@media only screen and (max-width: 768px) {
+    header .inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header .inner h1 {
+        margin-top: 1em;
+    }
+    header .inner p {
+        margin-top: 0.5em;
+    }
+}
