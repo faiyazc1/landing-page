@@ -4291,35 +4291,38 @@ input, select, textarea {
     }
 }
 
-
-
-
-#about-me .content {
-    text-align: center;
-}
-
-#about-me .icons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1em;
-    margin-top: 1em;
-}
-
-#about-me .icon {
-    font-size: 2em;
-    color: #4696e5; /* Adjust color as needed */
-    text-decoration: none;
-    transition: transform 0.3s ease;
-}
-
-#about-me .icon:hover {
-    transform: scale(1.2);
-}
-
+/* Ensure that icons stack vertically on smaller screens */
 @media only screen and (max-width: 768px) {
-    #about-me .icons {
+    #footer .icons {
+        display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    #footer .icons li {
+        margin-bottom: 1em;
+    }
+}
+/* Style for the icons in the special section */
+@media only screen and (max-width: 768px) {
+    .icons.labeled {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .icons.labeled li {
+        margin-bottom: 1em;
+    }
+
+    .icons.labeled li .icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icons.labeled li .icon .label {
+        margin-top: 0.5em;
     }
 }
